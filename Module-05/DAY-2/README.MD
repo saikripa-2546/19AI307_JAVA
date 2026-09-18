@@ -27,12 +27,42 @@ To Create a java program to display the value of volume of cylinder get the radi
  ```
 /*
 Program to implement a tightly encapsulated class using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SAI KRIPA SK 
+RegisterNumber:  212224040284
 */
 ```
 
 ## Sourcecode.java:
+
+```
+import java.util.*;
+public class SetAndGet {
+private String a;
+private String b;
+
+public void getadd() {
+    int a1=Integer.parseInt(a);
+    int b1=Integer.parseInt(b);
+	System.out.print("Sum is " + (a1+b1)); 
+	
+}
+public void setadd(String a,String b) {
+ this.a =a;
+ this.b=b;
+}
+
+public static void main(String args[]){
+ Scanner sc=new Scanner(System.in);
+ SetAndGet obj = new SetAndGet();
+ String str=sc.nextLine();
+ String str1=sc.nextLine();
+ 
+ obj.setadd(str,str1);
+ 
+ obj.getadd();
+}
+}
+```
 
 
 
@@ -46,6 +76,5 @@ RegisterNumber:
 
 ## RESULT:
 Thus a java program to display the value of volume of cylinder get the radius and height value as input and use tightly encapsulated class was executed successfully.
-
 
 
