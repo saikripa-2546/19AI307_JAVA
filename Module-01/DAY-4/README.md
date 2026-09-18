@@ -24,23 +24,36 @@ b)	Call the 'calculateArea' method on the 'rectangle' object
  ```
 /*
 Program to implement a User Defined Method using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SAI KRIPA SK 
+RegisterNumber:  212224040284
 */
 ```
 
 ## Sourcecode.java:
 
-
-
-
-
+```
+import java.util.*;
+public class Area {
+        double calculateArea()
+    {
+        double radius,cirarea;
+        Scanner sc=new Scanner(System.in);
+        radius=sc.nextDouble();
+        cirarea=3.14*radius*radius;
+        return cirarea;
+    }
+        public static void main(String[] args) {
+       Area obj=new Area();
+       double area=obj.calculateArea();
+       System.out.println("Area of Circle is "+area);
+    }
+}
+```
 
 
 ## OUTPUT:
 
-
+<img width="817" height="318" alt="Screenshot 2026-09-17 171015" src="https://github.com/user-attachments/assets/f381d512-dd3e-44af-9800-05d8f015307a" />
 
 ## RESULT:
 Thus, the Java program to print area of rectangle by defining instance method and local variable value as 10,20 was created successfully.
-
